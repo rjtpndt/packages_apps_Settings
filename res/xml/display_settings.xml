@@ -181,7 +181,6 @@
             android:key="theme_pref"
             android:title="@string/theming"
             android:fragment="com.android.settings.horcrux.fragments.ThemeFragment" />
-    </PreferenceCategory>
 
     <Preference
         android:key="vr_display_pref"
