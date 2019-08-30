@@ -174,4 +174,9 @@
     <string name="adj_intensity_title">Intensity</string>
     <string name="adj_contrast_title">Contrast</string>
 
+    <!-- Theme -->
+    <string name="theme_main">RGB System Accent</string>
+    <string name="theming">System Accent</string>
+    <string name="accent_color">Accent picker</string>
+
 </resources>
