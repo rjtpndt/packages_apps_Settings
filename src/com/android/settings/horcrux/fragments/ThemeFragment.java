@@ -96,6 +96,11 @@ public class ThemeFragment extends SettingsPreferenceFragment
     }
 
     @Override
+    public int getMetricsCategory() {
+       return 0;
+    }
+
+    @Override
     public void onResume() {
         super.onResume();
     }
@@ -105,3 +110,5 @@ public class ThemeFragment extends SettingsPreferenceFragment
         super.onPause();
     }
 }
+
+
