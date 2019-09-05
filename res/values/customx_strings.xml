@@ -175,8 +175,8 @@
     <string name="adj_contrast_title">Contrast</string>
 
     <!-- Theme -->
-    <string name="theme_main">System Theme</string>
-    <string name="theming">System Theme</string>
+    <string name="theme_main">RGB System Accent</string>
+    <string name="theming">System Accent</string>
     <string name="accent_color">Accent picker</string>
 
     <!-- Color Picker -->

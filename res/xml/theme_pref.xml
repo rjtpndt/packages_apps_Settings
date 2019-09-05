@@ -11,21 +11,8 @@
      limitations under the License.
 -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title="@string/theme_main">
-
-    <ListPreference
-        android:key="systemui_theme"
-        android:title="@string/device_theme"
-        android:entries="@array/systemui_theme_entries"
-        android:entryValues="@array/systemui_theme_values" />
-
-    <com.android.settings.custom.preference.SystemSettingListPreference
-        android:key="dark_theme_style"
-        android:title="@string/dark_theme_style_title"
-        android:entries="@array/dark_theme_style_entries"
-        android:entryValues="@array/dark_theme_style_values"
-        android:defaultValue="0" />
 
     <net.margaritov.preference.colorpicker.ColorPickerPreference
         android:key="accent_color"

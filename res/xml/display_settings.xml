@@ -158,7 +158,6 @@
         android:summary="@string/status_bar_double_tap_to_sleep_summary"
         android:defaultValue="false" />
 
-<!--
     <ListPreference
         android:key="systemui_theme"
         android:title="@string/device_theme"
@@ -177,13 +176,11 @@
         android:key="theme"
         android:title="@string/color_theme"
         android:summary="@string/summary_placeholder" />
--->
 
     <Preference
-        android:key="theme_pref"
-        android:title="@string/theming"
-	android:summary="Change system theme and accent" 
-        android:fragment="com.android.settings.horcrux.fragments.ThemeFragment" />
+            android:key="theme_pref"
+            android:title="@string/theming"
+            android:fragment="com.android.settings.horcrux.fragments.ThemeFragment" />
 
     <Preference
         android:key="vr_display_pref"
