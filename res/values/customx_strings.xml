@@ -174,19 +174,26 @@
     <string name="adj_intensity_title">Intensity</string>
     <string name="adj_contrast_title">Contrast</string>
 
-    <!-- Theme -->
-    <string name="theme_main">RGB System Accent</string>
-    <string name="theming">System Accent</string>
-    <string name="accent_color">Accent picker</string>
+    <!-- Face auto unlock -->
+    <string name="face_auto_unlock_title">Automatic face unlock</string>
+    <string name="face_auto_unlock_summary">Dismiss lock screen after face unlock</string>
 
-    <!-- Color Picker -->
-    <string name="dialog_color_picker">Color Picker</string>
-    <string name="press_color_to_apply">Press on color below to apply</string>
-    <string name="arrow_right">→</string>
-    <string name="arrow_down">↓</string>
-    <string name="hex">Hex:</string>
-    <string name="hex_hint">#ff000000</string>
-    <string name="set">Set</string>
-    <string name="color_default">Default</string>
+    <!-- Automatic theme based on time -->
+    <string name="systemui_theme_time">Automatic (time of the day)</string>
+    <string name="systemui_theme_time_title">Schedule dark theme</string>
+    <string name="systemui_theme_time_start_time_title">Start time</string>
+    <string name="systemui_theme_time_end_time_title">End time</string>
+
+    <!-- QS settings -->
+    <string name="qs_title">Quick settings</string>
+    <string name="qs_rows_portrait_title">Rows (portrait)</string>
+    <string name="qs_rows_landscape_title">Rows (landscape)</string>
+    <string name="qs_columns_portrait_title">Columns (portrait)</string>
+    <string name="qs_columns_landscape_title">Columns (landscape)</string>
+
+    <!-- Notification theme -->
+    <string name="notification_theme_title">Notification style</string>
+    <string name="notification_style_default">Default (white)</string>
+    <string name="notification_style_dark">Dark (follow background)</string>
 
 </resources>

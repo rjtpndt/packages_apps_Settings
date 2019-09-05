@@ -17,6 +17,8 @@
 package com.android.settings.display;
 
 import static android.provider.Settings.Secure.THEME_MODE;
+import static android.provider.Settings.Secure.THEME_MODE_LIGHT;
+import static android.provider.Settings.Secure.THEME_MODE_TIME;
 
 import android.content.Context;
 import android.provider.Settings;
@@ -37,6 +39,10 @@ public class SystemUiThemePreferenceController extends BasePreferenceController
         implements Preference.OnPreferenceChangeListener {
 
     private ListPreference mSystemUiThemePref;
+    private ListPreference mDarkThemePref;
+    private Preference mThemeTimePref;
+    private String KEY_DARK_THEME_STYLE = "dark_theme_style";
+    private String KEY_THEME_TIME_SETTINGS = "theme_time_settings";
 
     public SystemUiThemePreferenceController(Context context, String preferenceKey) {
         super(context, preferenceKey);
@@ -52,8 +58,12 @@ public class SystemUiThemePreferenceController extends BasePreferenceController
     public void displayPreference(PreferenceScreen screen) {
         super.displayPreference(screen);
         mSystemUiThemePref = (ListPreference) screen.findPreference(getPreferenceKey());
+        mDarkThemePref = (ListPreference) screen.findPreference(KEY_DARK_THEME_STYLE);
+        mThemeTimePref = (Preference) screen.findPreference(KEY_THEME_TIME_SETTINGS);
         int value = Settings.Secure.getInt(mContext.getContentResolver(), THEME_MODE, 0);
         mSystemUiThemePref.setValue(Integer.toString(value));
+        mDarkThemePref.setEnabled(value != THEME_MODE_LIGHT);
+        mThemeTimePref.setEnabled(value == THEME_MODE_TIME);
     }
 
     @Override
@@ -61,6 +71,8 @@ public class SystemUiThemePreferenceController extends BasePreferenceController
         int value = Integer.parseInt((String) newValue);
         Settings.Secure.putInt(mContext.getContentResolver(), THEME_MODE, value);
         refreshSummary(preference);
+        mDarkThemePref.setEnabled(value != THEME_MODE_LIGHT);
+        mThemeTimePref.setEnabled(value == THEME_MODE_TIME);
         return true;
     }
 
