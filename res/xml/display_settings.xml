@@ -193,6 +193,7 @@
     <Preference
             android:key="theme_pref"
             android:title="@string/theming"
+	    android:summary="Change system accent" 
             android:fragment="com.android.settings.horcrux.fragments.ThemeFragment" />
 
     <Preference
